@@ -1,0 +1,45 @@
+module partial-sync-from {
+
+  namespace "http://example.com/partial-sync-from";
+  prefix partial-sync-from;
+
+  import ietf-inet-types {
+    prefix inet;
+  }
+  import tailf-common {
+    prefix tailf;
+  }
+  import tailf-ncs {
+    prefix ncs;
+  }
+
+  description
+    "Bla bla...";
+
+  revision 2016-01-01 {
+    description
+      "Initial revision.";
+  }
+
+  container action {
+    tailf:action partial-sync-from {
+      tailf:actionpoint partial-sync-from-action;
+      input {
+        leaf xpath {
+          tailf:info "Should be relative to the device config. For example -> ios:interface/GigabitEthernet[name=2]";
+          type string;
+        }
+        leaf device {
+          type leafref {
+            path "/ncs:devices/ncs:device/ncs:name";
+          }
+        }
+      }
+      output {
+        leaf result {
+          type string;
+        }
+      }
+    }
+  }
+}
