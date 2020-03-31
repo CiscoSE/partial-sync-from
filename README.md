@@ -26,7 +26,7 @@ NSO 5.x
 
 ## License
 
-Provided under Cisco Sample Code License, for details see [LICENSE](./LICENSE.md)
+Provided under Cisco Sample Code License, for details see [LICENSE](./LICENSE)
 
 ## Code of Conduct
 
