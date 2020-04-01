@@ -1,6 +1,6 @@
 # Partial sync from
 
-Action example that performs a partial sync from to a given device from Cisco NSO. 
+Action example that performs a partial sync-from on a given device from Cisco NSO. 
 
 ## Usage example
 
@@ -22,7 +22,7 @@ NSO 5.x
 
 ## Contacts
 
-* Santiago Flores Kante (sfloresk@cisco.com)
+* Santiago Flores Kanter (sfloresk@cisco.com)
 
 ## License
 
